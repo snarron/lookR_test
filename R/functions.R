@@ -52,7 +52,7 @@ ensure_logged_in <- function(){
 }
 
 # run look by its look id 
-run_look <- function(look_id = NULL, format = "json"){
+run_look <- function(look_id = NULL, format = "csv"){
 	
 	# ensure_logged_in
 	ensure_logged_in()
