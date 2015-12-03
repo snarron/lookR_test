@@ -71,7 +71,8 @@ run_look <- function(look_id = NULL, format = "json"){
 	
 	# extract and prepare query results
 	json_response <- fromJSON(response)
-	return(data.frame(do.call("rbind", lapply(json_response, unlist))))
+	return(lapply(json_response,unlist))
+	# return(data.frame(do.call("rbind", lapply(json_response, unlist))))
 	}
 	
 }
